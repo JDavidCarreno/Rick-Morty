@@ -1,0 +1,49 @@
+.searchBarDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    margin: 1rem auto;
+    min-width: 50vw;
+    height: 7vh;
+    background-color: beige;
+    gap: 10px;
+    border-radius: .5rem;
+    font-size: 18px;
+    justify-content: center;
+    /* align-self: flex-end; */
+    
+}
+
+.input {
+    font-size: 90%;
+    margin: auto;
+    border-radius: 1rem;
+    flex-shrink: 0;
+
+}
+
+.boton {
+    margin: auto;
+    font-size: 90%;
+    background-color: yellowgreen;
+    border-radius: .5rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .searchBarDiv {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .input {
+        margin: auto;
+    }
+
+    .boton {
+        margin: auto;
+    }
+}
