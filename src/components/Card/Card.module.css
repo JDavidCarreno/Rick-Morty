@@ -1,4 +1,4 @@
-.divCard {
+/* .divCard {
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
@@ -9,27 +9,25 @@
     gap: 2px;
     padding: 1rem;
     align-content: center;
-    /* position: relative; */
-}
+ } 
 
 
 .button {
-    width: fit-content;
-    background-color: red;
+    margin-left: auto;
+    background-color: #ff6b6b;
+    color: #ffffff;
     font-weight: bold;
-    border: black solid 1px;
-    border-radius: 1rem;
-    align-self: flex-end;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
+.button:hover {
+    background-color: #ff3b3b;
+  }
 
 .h2 {
     margin: 3%;
     color: black;
-    /* position: absolute;
-    top: 10px;
-    right: 0;
-    bottom: 0;
-    left: 0; */
 }
 
 .h2:first-of-type{
@@ -40,14 +38,67 @@
     border: black solid 1px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: .5rem;
-    /* position: absolute;
-    top: 5px;
-    bottom:auto;
-    left: 50px; */
 }
 
 .img {
     border: black solid 1px;
-    border-radius: .5rem;
+    border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} */
+
+/*-------------------------------------------------------------------------*/
+
+
+.divCard {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    gap: 2px;
+    padding: 1rem;
+    align-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.divCard:hover {
+    transform: translateY(-5px);
+}
+
+.button {
+    margin-left: auto;
+    background-color: #ff6b6b;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ff3b3b;
+  }
+
+.h2 {
+    margin: 3%;
+    color: black;
+}
+
+.h2:first-of-type{
+    background-color: blanchedalmond;
+    width: fit-content;
+    align-self: center;
+    padding: 5px;
+    border: black solid 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+}
+
+.img {
+    border: black solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    align-self: center;
 }
