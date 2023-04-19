@@ -9,9 +9,15 @@ export default function SearchBar(props) {
       setId(event.target.value)
    }
 
+   const handleEnter = (event) => {
+      if (event.key === 'Enter') {
+         props.onSearch(id);
+      }
+   }
+
    return (
       <div className={styles.searchBarDiv}>
-         <input className={styles.input} type='search' placeholder='Id...' onChange={handleChange} value={id}/>
+         <input className={styles.input} type='search' placeholder='Id...' onChange={handleChange} value={id} onKeyUp={handleEnter}/>
          <button className={styles.boton} onClick={() => props.onSearch(id)} >Agregar</button>   
       </div>
    );
