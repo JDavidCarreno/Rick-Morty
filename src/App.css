@@ -3,8 +3,4 @@
    flex-direction: column;
    text-align: center;
    align-items: center;
-   background-image: url('../fondo.png');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
 }
