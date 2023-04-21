@@ -23,12 +23,22 @@ const Detail = () => {
 
     return(
         <div>
-            {/* <h2 className={styles.prueba}>{character.name}</h2>
-            <h2 className={styles.prueba}>{character.status}</h2>
-            <h2 className={styles.prueba}>{character.species}</h2>
-            <h2 className={styles.prueba}>{character.gender}</h2>
-            <h2 className={styles.prueba}>{character.origin.name}</h2>
-            <h2 className={styles.prueba}>{character.image}</h2> */}
+            <h1>Detalles</h1>
+            {
+                character ? (
+                    <div>
+                        <h2 className={styles.prueba}>name: {character.name}</h2>
+                        <h2 className={styles.prueba}>staus: {character.status}</h2>
+                        <h2 className={styles.prueba}>Especie: {character.species}</h2>
+                        <h2 className={styles.prueba}>Género: {character.gender}</h2>
+                        <h2 className={styles.prueba}>Origen: {character.origin?.name}</h2>
+                        <img src={character.image} alt={character.name} />
+                    </div>
+                )
+                 : (
+                    ""
+                 )
+            }
         </div>
     )
 }
