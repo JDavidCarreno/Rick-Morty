@@ -5,7 +5,7 @@ export default function SearchBar(props) {
 
    let [id, setId] = useState('');
 
-   const handleChange = (event) => {
+   const handleChange = (event) => {  //event tiene propiedad target (la etiqueta, en este caso input), y value.
       setId(event.target.value)
    }
 
