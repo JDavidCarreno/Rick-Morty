@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(167, 211, 80);
+    text-align: left;
+    height: fit-content;
+    width: 20vw;
+    padding: 2rem;
+    align-items: center;
+    padding: 5%;
+    margin-top: 55%;
+    border: 2px solid white;
+    border-radius: 10%;
+    
+}
+
+.img {
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+
+.btn {
+    width: fit-content;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 2px solid white;
+    background-color: yellow;
+    color: rgb(3, 3, 3);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}

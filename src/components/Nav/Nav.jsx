@@ -17,6 +17,8 @@ const Nav = (props) => {
                 <button>About</button>
             </Link>
 
+            <button onClick={props.handleLogout}>LogOut</button>
+
             <div className={styles.divContainerSearchBar}>
                 <SearchBar onSearch={props.onSearch} />
             </div>
