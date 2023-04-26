@@ -10,14 +10,18 @@ const Nav = (props) => {
             <img className={styles.logo} src={logo} alt="Rick and Morty logo" />
 
             <Link to='/home'>
-                <button>Home</button>
+                <button className={styles.boton}>Home</button>
             </Link>
 
             <Link to='/about'>
-                <button>About</button>
+                <button className={styles.boton}>About</button>
             </Link>
 
-            <button onClick={props.handleLogout}>LogOut</button>
+            <Link to='/favorites'>
+                <button className={styles.boton}>Favorites</button>
+            </Link>
+
+            <button className={styles.boton} onClick={props.handleLogout}>LogOut</button>
 
             <div className={styles.divContainerSearchBar}>
                 <SearchBar onSearch={props.onSearch} />
