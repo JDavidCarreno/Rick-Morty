@@ -32,7 +32,7 @@ const Favorites = ({myFavorites}) => {
                     <select className={styles.select} onChange={handleOrder}>
                         <option value="" selected>Order...</option>
                         <option value="A">Ascendente</option>
-                        <option value="D">Descendiente</option>
+                        <option value="D">Descendente</option>
                     </select>
                 </label>
                 

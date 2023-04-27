@@ -9,10 +9,13 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_FAV:
+            let copy = [...state.allCharacter, action.payload];
             return {
                 ...state,
-                myFavorites: [...state.myFavorites, action.payload],
-                allCharacter: [...state.allCharacter, action.payload]
+                // myFavorites: [...state.myFavorites, action.payload],
+                myFavorites: copy,
+                // allCharacter: [...state.allCharacter, action.payload]
+                allCharacter: [...copy]
             }
             
         case REMOVE_FAV:
