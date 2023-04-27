@@ -19,8 +19,6 @@ const Detail = () => {
         return setCharacter({});
      }, [id]);
 
-     console.log(character.name);
-
     return(
         <div>
             <h1>Detalles</h1>

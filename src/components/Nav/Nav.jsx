@@ -4,7 +4,6 @@ import logo from '../../img/randmLogo.png'
 import { Link } from "react-router-dom"
 
 const Nav = (props) => {
-    console.log(props);
     return(
         <div className={styles.divNav}>
             <img className={styles.logo} src={logo} alt="Rick and Morty logo" />
