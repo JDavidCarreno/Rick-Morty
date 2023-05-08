@@ -8,23 +8,29 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_FAV:
-            let copy = [...state.allCharacter, action.payload];
-            return {
-                ...state,
-                // myFavorites: [...state.myFavorites, action.payload],
-                myFavorites: copy,
-                // allCharacter: [...state.allCharacter, action.payload]
-                allCharacter: [...copy]
-            }
-            
-        case REMOVE_FAV:
-            let deleteCharacter = state.myFavorites.filter(character => character.id !== Number(action.payload))
+        // case ADD_FAV:
+        //     let copy = [...state.allCharacter, action.payload];
+        //     return {
+        //         ...state,
+        //         // myFavorites: [...state.myFavorites, action.payload],
+        //         myFavorites: copy,
+        //         // allCharacter: [...state.allCharacter, action.payload]
+        //         allCharacter: [...copy]
+        //     }
 
-            return {
-                ...state,
-                myFavorites: deleteCharacter
-            }
+        case ADD_FAV:
+            return { ...state, myFavorites: action.payload, allCharacters: action.payload };
+            
+        // case REMOVE_FAV:
+        //     let deleteCharacter = state.myFavorites.filter(character => character.id !== Number(action.payload))
+
+        //     return {
+        //         ...state,
+        //         myFavorites: deleteCharacter
+        //     }
+
+        case REMOVE_FAV:
+            return { ...state, myFavorites: action.payload };
 
         case FILTER:
             let filtered = state.allCharacter.filter(character => character.gender === action.payload)    
