@@ -25,11 +25,11 @@ const Detail = () => {
             {
                 character ? (
                     <div>
-                        <h2 className={styles.prueba}>name: {character.name}</h2>
-                        <h2 className={styles.prueba}>staus: {character.status}</h2>
-                        <h2 className={styles.prueba}>Especie: {character.species}</h2>
-                        <h2 className={styles.prueba}>Género: {character.gender}</h2>
-                        <h2 className={styles.prueba}>Origen: {character.origin?.name}</h2>
+                        <h2 className={styles.prueba}>Name: {character.name}</h2>
+                        <h2 className={styles.prueba}>Staus: {character.status}</h2>
+                        <h2 className={styles.prueba}>Specie: {character.species}</h2>
+                        <h2 className={styles.prueba}>Gender: {character.gender}</h2>
+                        <h2 className={styles.prueba}>Origin: {character.origin?.name}</h2>
                         <img src={character.image} alt={character.name} />
                     </div>
                 )

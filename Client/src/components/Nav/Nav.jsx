@@ -6,7 +6,9 @@ import { Link } from "react-router-dom"
 const Nav = (props) => {
     return(
         <div className={styles.divNav}>
-            <img className={styles.logo} src={logo} alt="Rick and Morty logo" />
+            <Link to='/home'>
+                <img className={styles.logo} src={logo} alt="Rick and Morty logo" />
+            </Link>
 
             <Link to='/home'>
                 <button className={styles.boton}>Home</button>

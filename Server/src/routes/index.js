@@ -1,8 +1,8 @@
+const express = require('express');
+const router = express.Router();
 const { getCharById } = require('../controllers/getCharById');
 const { postFav, deleteFav } = require('../controllers/handleFavorites');
 const { login } = require('../utils/login');
-const express = require('express');
-const router = express.Router();
 
 router.get('/character/:id', getCharById);
 

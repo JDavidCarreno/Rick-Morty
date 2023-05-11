@@ -1,6 +1,6 @@
 import { addFav, removeFav } from '../../redux/actions';
 import styles from './Card.module.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {connect} from 'react-redux'
 import { useState, useEffect } from 'react';
 
@@ -28,6 +28,7 @@ function Card(props) {
       
    }
 
+   const location = useLocation();
 
    return (
       <div className={styles.divCard}>
@@ -38,7 +39,9 @@ function Card(props) {
                <button onClick={handleFavorite}>🤍</button>
             )
          }
-         <button className={styles.button} onClick={()=>onClose(id)}>X</button>
+         {
+            location.pathname !== '/favorites' && <button className={styles.button} onClick={()=>onClose(id)}>X</button>
+         }
          <h2 className={styles.h2}><Link to = {`/detail/${id}`}>{name}</Link></h2>
          <h2 className={styles.h2}>{status}</h2>
          <h2 className={styles.h2}>{species}</h2>

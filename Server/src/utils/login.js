@@ -10,3 +10,8 @@ const login = (req, res) => {
 };
 
 module.exports = {login};
+
+// let access = false;
+// users.forEach((user) => {
+//     if(user.email === email && user.password === password) access = true
+// })

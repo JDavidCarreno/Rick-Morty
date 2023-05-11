@@ -48,7 +48,7 @@ const Form = (props) => {
                         errors.password ? (<p>{errors.password}</p>) : null
                     }
                 </div>
-                <button className={styles.btn} type="submit" onClick={handleSubmit}>Ingresar</button>
+                <button className={styles.btn} type="submit" onClick={handleSubmit}>Login</button>
             </form>
         </div>
     )

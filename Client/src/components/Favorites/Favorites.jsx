@@ -30,16 +30,16 @@ const Favorites = ({myFavorites}) => {
                 <label className={styles.label}>
                     Order
                     <select className={styles.select} onChange={handleOrder}>
-                        <option value="" selected>Order...</option>
-                        <option value="A">Ascendente</option>
-                        <option value="D">Descendente</option>
+                        
+                        <option value="A">Ascending</option>
+                        <option value="D">Descending</option>
                     </select>
                 </label>
                 
                 <label className={styles.label}>
                     Gender
                     <select className={styles.select} onChange={handleFilter}>
-                        <option value="" selected> Gender... </option>
+                        
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Genderless">Genderless</option>
